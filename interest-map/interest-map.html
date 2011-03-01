@@ -254,7 +254,8 @@
       ctx.font = NAME_FONT.font;
       var width = ctx.measureText(person.name).width + 10;
       ctx.shadowBlur = 2; ctx.shadowOffsetX = 2; ctx.shadowOffsetY = 2, ctx.shadowColor='rgba(0, 0, 0, 0.2)';
-      ctx.fillStyle = interest ? lighten_color(person.color) : person.color; 
+      ctx.fillStyle = interest ? lighten_color(person.color) : person.color;
+      ctx.fillStyle = interest ? 'gray' : 'green'; 
       ctx.strokeStyle = interest ? '#ff0' : '#000', ctx.lineWidth=.1;
       ctx.rect( -width/2, -10, width, 20 );
       ctx.fill(); ctx.stroke();
